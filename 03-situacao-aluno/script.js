@@ -19,3 +19,10 @@ const media = 7.2;
 
 // TODO:
 // Exiba uma mensagem contendo nome, média e situação.
+
+if (media >= 7) {
+  
+  console.log(`Aprovado com média ${media}`)
+} else {
+  console.log(`Reprovado com média ${media}`)
+}
