@@ -9,19 +9,17 @@ const tarefas = [
 ];
 
 function adicionarTarefa(lista, novaTarefa) {
-  // TODO:
-  // Retorne um NOVO array incluindo novaTarefa.
+  return [...lista, novaTarefa];
 }
 
 function concluirTarefa(lista, id) {
-  // TODO:
-  // Retorne um NOVO array.
-  // Altere apenas a tarefa correspondente ao id.
+  return lista.map(tarefa => 
+    tarefa.id === id ? { ...tarefa, concluida: !tarefa.concluida } : tarefa
+  );
 }
 
 function removerTarefa(lista, id) {
-  // TODO:
-  // Retorne um NOVO array sem a tarefa informada.
+  return lista.filter(tarefa => tarefa.id !== id);
 }
 
 // TODO:
